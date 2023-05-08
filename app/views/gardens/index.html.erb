@@ -1,0 +1,14 @@
+<div class="container">
+
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Gardens</h1>
+
+  <div id="gardens">
+    <% @gardens.each do |garden| %>
+      <%= render garden %>
+    <% end %>
+  </div>
+
+  <%= link_to "New garden", new_garden_path, class: 'text-decoration-none btn btn-outline-success' %>
+</div>

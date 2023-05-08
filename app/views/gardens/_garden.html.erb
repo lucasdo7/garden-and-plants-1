@@ -1,0 +1,10 @@
+<div id="<%= dom_id garden %>">
+  <p>
+    <strong>Name:</strong>
+    <%= link_to garden.name, garden_path(garden), class: 'text-decoration-none' %>
+  </p>
+
+  <p>
+    <%= image_tag garden.banner_url, alt: 'Garden', width: 300 %>
+  </p>
+</div>
